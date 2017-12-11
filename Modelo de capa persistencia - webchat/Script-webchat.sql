@@ -3,20 +3,21 @@ USE Webchat;
 
 CREATE TABLE Gender(
 genderId INT NOT NULL AUTO_INCREMENT,
-genderPerson varchar(7) not null,
+genderPerson VARCHAR(10) not null,
 PRIMARY KEY(genderId)
 );
 
 CREATE TABLE UserAccount(
 userAccountId INT NOT NULL AUTO_INCREMENT,
-userName VARCHAR(25) NOT NULL,
-passwordUserId INT NOT NULL,
-emailUser VARCHAR(25) NOT NULL,
-firstName VARCHAR(25) NOT NULL,
-lastName VARCHAR(25) NOT NULL,
-genderId INT NOT NULL,
+namesUser VARCHAR(50) NOT NULL,
+surnames VARCHAR(50) NOT NULL,
+nameUser VARCHAR(50) NOT NULL,
+passwordUserId VARCHAR(50) NOT NULL,
+emailUser VARCHAR(50) NOT NULL,
+genderId VARCHAR(10) NOT NULL,
 PRIMARY KEY(userAccountId)
 );
+
 
 CREATE TABLE TypeLounge(
 typeLoungeId INT NOT NULL AUTO_INCREMENT,
